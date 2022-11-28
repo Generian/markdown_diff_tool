@@ -31,7 +31,6 @@ export default function Home() {
   useEffect(() => {
     if (oldString && newString) {
       setDiff(getDiffMarkdown(oldString, newString))
-      console.log(diff)
     }
   }, [oldString, newString])
 
