@@ -1,7 +1,6 @@
+import { marked } from 'marked'
 import Head from 'next/head'
 import { ChangeEvent, useEffect, useState } from 'react'
-import ReactMarkdown from 'react-markdown'
-import rehypeHighlight from 'rehype-highlight'
 import { download, getDiffMarkdown } from '../helpers/diff'
 import styles from '../styles/Home.module.css'
 
@@ -56,9 +55,8 @@ export default function Home() {
           </button>
         </div>
         <div className={styles.divContainer}>
-          {diff && <ReactMarkdown rehypePlugins={[rehypeHighlight]}>
-            {diff}
-          </ReactMarkdown>}
+          <div className={styles.textFormatting} dangerouslySetInnerHTML={{__html: marked.parse(diff) }}>
+          </div>
         </div>
       </main>
     </div>

@@ -8,5 +8,24 @@
 }
 
 .divContainer {
-  margin-top: 2rem;  
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.textFormatting {
+  max-width: 800px;
+  font-family: "NunitoSans",Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  line-height: 1.75; 
+  color: #101112;
+}
+
+.textFormatting ins {
+  background-color: #28ebcf;
+}
+
+.textFormatting del {
+  color: #f79880;
 }
