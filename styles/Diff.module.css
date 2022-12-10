@@ -1,6 +1,13 @@
-.container {
-  padding: 0;
-  margin: 2rem;
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  height: 100vh;
 }
 
 .download {
@@ -15,11 +22,12 @@
 }
 
 .textFormatting {
-  max-width: 800px;
+  width: 860px;
   font-family: "NunitoSans",Arial,Helvetica,sans-serif;
   font-size: 16px;
   line-height: 1.75; 
   color: #101112;
+  padding: 2rem;
 }
 
 .textFormatting ins {
